@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tokyo Noodles</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Barra superior: marca, atajos -->
+<header class="brandbar">
+  <div class="brand">Tokyo Noodles</div>
+  <nav id="nav"></nav>
+  <div class="actions">
+    <button id="btnOrder" class="btn neon neon-pink status-btn">
+      <span class="dot" id="orderDot"></span>
+      <span id="orderText">Pedido</span>
+    </button>
+    <button id="btnCart" class="btn pill neon neon-cyan">
+      $<span id="miniTotal">0</span> 🛒 <span id="badge">0</span>
+    </button>
+  </div>
+</header>
+
+    <!-- Barra de ubicación + búsqueda -->
+    <div class="searchbar">
+      <div class="where">
+        <span>📍</span>
+        <input id="loc" placeholder="¿Dónde quieres pedir?" />
+        <button class="icon">▾</button>
+      </div>
+      <div class="search">
+        <span>🔎</span>
+        <input id="qGlobal" placeholder="Buscar en el menú" />
+        <button id="qBtn" class="icon btn neon neon-cyan">Buscar</button>
+      </div>
+    </div>
+
+    <!-- Categorías (chips) -->
+    <div id="catbar" class="catbar"></div>
+
+    <!-- Contenido dinámico -->
+    <main id="app"></main>
+
+    <!-- Drawer del carrito -->
+    <aside id="drawer" class="drawer" aria-hidden="true">
+      <div class="drawer-head">
+        <b>Carrito</b>
+        <button id="closeDrawer" class="btn" aria-label="Cerrar">✕</button>
+      </div>
+
+      <div id="rows" class="drawer-body"></div>
+
+      <div class="drawer-foot" id="drawerFoot">
+        <div>Total: <b id="sum">$0</b></div>
+        <div class="actions" id="drawerActions">
+          <button id="clearCart" class="btn">Vaciar</button>
+          <button id="goCheckout" class="btn primary neon neon-pink">Pagar</button>
+        </div>
+      </div>
+    </aside>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

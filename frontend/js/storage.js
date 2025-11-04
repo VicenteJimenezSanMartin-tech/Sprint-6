@@ -1,4 +1,4 @@
-import { api } from "./api_local.js";
+import { api } from "./api_real.js";
 
 /**
  * Utilidades de UI: badge del carrito, render del drawer, etc.

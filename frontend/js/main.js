@@ -1,5 +1,5 @@
 // frontend/js/main.js
-import { api } from "./api_local.js";
+import { api } from "./api_real.js";
 import { store } from "./storage.js";
 
 /* Menú superior (solo las dos entradas) */
